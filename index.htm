@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivthean-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Siv-Thean</h1>
+            <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="aboutMe.html" target="_blank">About Me </a></li>
+                <li><a href="assets/sivthean-cv.pdf" target="_blank">Curriculum Vitae</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+            <button id="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="content">
+                <span class="subtitle">
+                    Hello
+                </span>
+                <h1 class="title ">
+                    I'm <span>SivThean <br></span>a Junior Frontend developer
+                </h1>
+                <p class="description ">
+                    Hey there! I'm a junior frontend developer who enjoys creating attractive and user-friendly interfaces for websites. I'm skilled in HTML, CSS, and JavaScript, and I'm always learning to stay updated with the latest frontend techniques. I believe in using clean, effective code to make browsing the web smooth and enjoyable. I'm eager to keep learning and improving in this exciting field. Let's work together to make something awesome!
+                </p>
+                <div class="buttons">
+                    <a href="mailto:sivtheanv@gmail.com">Hire Me</a>
+                    <button>Portfolio</button>
+                </div>
+            </div>
+            <div class="image"> 
+                <img class="h-img" src="assets/images.jpg" alt="image">
+            </div>
+        </div>      
+    </section>
+</body>
+<script>
+    const btn= document.getElementById("btn")
+    btn.addEventListener("click", () => {
+        document.querySelector("header ul").classList.toggle("show")
+    })
+</script>
+</html>
